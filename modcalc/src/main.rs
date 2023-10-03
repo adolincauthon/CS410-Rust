@@ -43,7 +43,9 @@ fn test_modexp() {
     assert_eq!(34, modexp(450, 768, 517));
     let max = u64::max_value();
     assert_eq!(3, modexp(max, max, 6));
-    assert_eq!(1, modexp(0, 0, 4))
+    assert_eq!(1, modexp(0, 0, 4));
+    assert_eq!(1, modexp(1, 0, 4));
+    assert_eq!(0, modexp(0, 1, 4));
 }
 
 ///Parses a string into its u64 value
@@ -66,6 +68,7 @@ fn main() {
         error();
     }
 
+    //Parse CLI arguments
     let base = parsenum(args[1].trim());
     let exponent = parsenum(args[2].trim());
     let modulus = parsenum(args[3].trim());
