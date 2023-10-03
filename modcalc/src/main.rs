@@ -42,8 +42,8 @@ fn test_modexp() {
     assert_eq!(4, modexp(10, 9, 6));
     assert_eq!(34, modexp(450, 768, 517));
     let max = u64::max_value();
-    println!("Max = {}", max);
     assert_eq!(3, modexp(max, max, 6));
+    assert_eq!(1, modexp(0, 0, 4))
 }
 
 ///Parses a string into its u64 value
