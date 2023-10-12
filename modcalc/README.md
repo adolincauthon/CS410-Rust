@@ -20,3 +20,7 @@ I used the testing function provided in the assignment and added some additional
 ### How'd it go?
 
 This went pretty well, it was a good assignment to git used to the Rust language and ecosystem. I didn't experience to many difficults.
+
+### Sources
+
+Both of the class textbooks and the wikipedia article linked within the assignment for the algorithm. No other outside sources.
