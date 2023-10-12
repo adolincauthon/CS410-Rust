@@ -1,4 +1,3 @@
-use rand::Rng; // help: https://stackoverflow.com/questions/66367101/resolving-imports-in-rust
 use toy_rsa_lib::*;
 
 /// Fixed RSA encryption exponent
@@ -60,6 +59,7 @@ fn test_decrypt() {
 
 #[test]
 fn test_full() {
+    use rand::Rng;
     for _ in 1..100 {
         let msg = rand::thread_rng().gen_range(1..u32::MAX);
         let keys = genkey();
