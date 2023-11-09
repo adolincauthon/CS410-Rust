@@ -14,4 +14,4 @@ and MAX_ROWS values but did not enforce this in the crate in case a user wanted 
 
 I tested the lib.rs crate thoroughly. I wrote unit tests for creating the board, finding a winning move, chomping valid
 and invalid blocks, and finding the smallest possible chomp. I did not write tests in the main.rs file since it was all processing
-user input and feeding to the already tested lib.rs file.
+user input and feeding to the already tested lib.rs file. I thoroughly tested the user input options manually.
